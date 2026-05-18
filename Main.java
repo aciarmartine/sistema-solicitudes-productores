@@ -1,29 +1,24 @@
-import java.sql.*;
-
 public class Main {
+
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/sistema_solicitudes_productores";
-        String user = "root";
-        String password = "";
 
-        try {
-            Connection conn = DriverManager.getConnection(url, user, password);
+        System.out.println("==============================================");
+        System.out.println(" Sistema de Gestión de Solicitudes ");
+        System.out.println(" y Certificados para Productores ");
+        System.out.println("==============================================");
 
-            String sql = "INSERT INTO solicitudes (productor, descripcion, estado) VALUES (?, ?, ?)";
-            PreparedStatement stmt = conn.prepareStatement(sql);
+        System.out.println("\nPrototipo académico desarrollado en Java.");
+        System.out.println("Materia: Seminario de Práctica de Informática.");
+        System.out.println("Base de datos utilizada: MySQL.");
+        System.out.println("Persistencia definida en el archivo database.sql.");
 
-            stmt.setString(1, "Juan Perez");
-            stmt.setString(2, "Solicitud de certificado");
-            stmt.setString(3, "Pendiente");
+        System.out.println("\nFuncionalidades principales:");
+        System.out.println("- Registro de solicitudes");
+        System.out.println("- Consulta de estados");
+        System.out.println("- Asignación de operadores");
+        System.out.println("- Historial de solicitudes");
 
-            stmt.executeUpdate();
-
-            System.out.println("Solicitud insertada correctamente");
-
-            conn.close();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        System.out.println("\nSistema iniciado correctamente.");
     }
+
 }
