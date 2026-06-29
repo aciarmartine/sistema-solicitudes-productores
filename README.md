@@ -1,31 +1,34 @@
-# Sistema de Gestión de Solicitudes y Certificados para Productores de Seguros
+# Sistema de Solicitudes para Productores
 
-Proyecto académico desarrollado para la materia Seminario de Práctica de Informática.
+Proyecto desarrollado para la materia Seminario de Práctica de Informática de la Universidad Siglo 21.
 
 ## Descripción
 
-El sistema propone una solución para la gestión de solicitudes realizadas por productores de seguros, permitiendo registrar solicitudes, consultar estados, asignar operadores y mantener un historial de cambios.
+El sistema permite gestionar solicitudes realizadas por productores asociados mediante una aplicación desarrollada en Java.
+
+Entre las funcionalidades implementadas se encuentran:
+
+- Registrar solicitudes.
+- Consultar solicitudes almacenadas.
+- Actualizar el estado de una solicitud.
+- Persistencia de datos utilizando MySQL.
+- Manejo de excepciones.
+- Aplicación del patrón de diseño DAO.
+- Uso de clases abstractas.
+- Utilización de ArrayList y arreglos.
 
 ## Tecnologías utilizadas
 
 - Java
 - MySQL
-- UML
 - JDBC
+- IntelliJ IDEA
+- GitHub
 
-## Funcionalidades principales
+## Base de datos
 
-- Registro de solicitudes
-- Consulta de estados
-- Asignación de operadores
-- Historial de solicitudes
-- Persistencia de datos en MySQL
+El archivo `database.sql` contiene la estructura y los datos iniciales utilizados por el proyecto.
 
-## Estructura del proyecto
+## Autor
 
-- `Main.java`: prototipo principal del sistema.
-- `database.sql`: script de creación de base de datos, tablas y consultas de prueba.
-- `diagramas/`: contiene los diagramas UML y el DER utilizados en el informe.
-## Estado del proyecto
-
-Prototipo académico inicial desarrollado como parte del TP2.
+Martín Eduardo Aciar Illanes
